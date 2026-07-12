@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is the Head Section -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- This is the Beginning of the Body Section -->
+
+<body>
+
+<!-- This is the Header and Navigation Section -->  
+
+<header>
+ <a class="portfolio" href="/pages/index.html">Mj.leguidleguid</a>
+ <ul class="nav-links">
+ <li><a href="#">Home</a></li>
+ <li><a href="#projects">Projects</a></li>
+ <li><a href="#about">About</a></li>
+ <li><a href="#skills">Skills</a></li>
+ </ul>
+
+ <a class="cta" href="#">Let's Talk</a>
+</header>
+
+<!-- This is the Hero Section at the Top -->
+
+<section id="home" class="full-section">
+  <img src="/images/emjaiye-white.png" alt="Profile Picture">
+
+  <div class="text-content">
+    <h1 class="typing-animation">Mj.leguidleguid</h1>
+    <p>Developing creative game ideas and elevating player experience.</p>
+
+    <div class="header-icons">
+    <a href="https://github.com/emjaiyee?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <a class="cv-button" href=""><button>Download CV</button></a>
+  </div>
+</section>
+
+
+
+<!-- This is the Portfolio Section -->
+
+<section id="projects" class="full-section">
+    <div class="eatured-projects">
+  <h2>Featured Projects</h2>
+    <div class="card-container">
+
+      <div class="expandable-card">
+        <input type="checkbox" class="card-toggle" id="card1" />
+
+        <!-- Clickable Card -->
+        <label for="card1" class="card">
+          <div class="card-content">
+            <img src="your-thumbnail.jpg" alt="Thumbnail" />
+          </div>
+        </label>
+
+        <!-- Modal Overlay -->
+        <div class="card-modal">
+          <label for="card1" class="card-modal-overlay"></label>
+ 
+          <div class="card-modal-content">
+            <label for="card1" class="close-button">×</label>
+            <img src="your-full-image.jpg" alt="Full Project Image" />
+            <h2>Project Name</h2>
+            <p>Full description of the project with more details shown in a modal-style overlay.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+
+<!-- This is the About Me Section -->
+<section id="about" class="about-section">
+  <h2>About Me</h2>
+  <p class="about-description">
+    I'm a programmer and game designer...
+  </p>
+
+  <h3>My Approach</h3>
+  
+  <!-- Step cards container -->
+  <div class="approach-container">
+    <div class="approach-card">
+      <span class="step-number">01</span>
+      <span class="step-text">Understand users & goals</span>
+    </div>
+    <div class="approach-card">
+      <span class="step-number">02</span>
+      <span class="step-text">Create clean UI layouts</span>
+    </div>
+    <div class="approach-card">
+      <span class="step-number">03</span>
+      <span class="step-text">Responsive experiences</span>
+    </div>
+  </div>
+
+  <!-- Stats row container -->
+  <div class="stats-container">
+    <div class="stat-item">
+      <h4>05+</h4>
+      <p>Jam Participations</p>
+    </div>
+    <div class="stat-item">
+      <h4>10+</h4>
+      <p>Games Done</p>
+    </div>
+    <div class="stat-item">
+      <h4>05+</h4>
+      <p>Clients Served</p>
+    </div>
+  </div>
+</section>
+
+<!-- This is the Skills Section -->
+<section id="skills" class="skills-section">
+  <h2>Skills</h2>
+  <p class="skills-subtitle">Crafting seamless UI/UX and clean code</p>
+
+  <div class="skills-grid">
+    <!-- Card 1 -->
+    <div class="skill-card">
+      <h3>Core Skills</h3>
+      <div class="tags-container">
+        <span class="skill-tag">UI/UX layout</span>
+        <span class="skill-tag">Frontend Dev</span>
+        <span class="skill-tag">Responsive Web Design</span>
+        <span class="skill-tag">Component-Based Design</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="skill-card">
+      <h3>Frontend Tech</h3>
+      <div class="tags-container">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JS</span>
+        <span class="skill-tag">WordPress</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="skill-card">
+      <h3>Design Tools</h3>
+      <div class="tags-container">
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Photoshop</span>
+        <span class="skill-tag">Illustrator</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="skill-card">
+      <h3>Tools & Interaction</h3>
+      <div class="tags-container">
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">Netlify</span>
+        <span class="skill-tag">GSAP</span>
+        <span class="skill-tag">UI Interactions</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- This is the footer Section -->
+
+<footer class="footer">
+  <p>&copy; 2025 Mj.leguidleguid | Mjleguidleguid17@gmail.com</p>
+  <div class="footer-icons">
+    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-behance"></i></a>
+    <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  scroll-behavior: smooth;
+  background-color: #1A1A1A;
+  font-family: "Fira Code", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+li, a {  
+    display: inline-block;
+    padding: 0px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Fira Code", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #e0e0e0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    z-index: 1000;
+    background-color: #262626;
+}
+
+.portfolio {
+    cursor: pointer;
+    font-family: "Fira Code", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+.portfolio:hover {
+    color: #007bff;
+    transform: scale(1.03);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    font-weight: 500;
+    font-size: 20px;
+    color: #E0E0E0;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    transform: scale(1.03);
+    color: #007bff;
+}
+
+/* === HAMBURGER MENU === */
+/* Note: The hamburger menu requires corresponding HTML changes.
+   You'll need an <input type="checkbox" class="nav-toggle">
+   and a <label class="hamburger"> for it to work. */
+.nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #E0E0E0;
+    cursor: pointer;
+    user-select: none;
+}
+
+button {
+    font-family: "Fira Code", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 12px 30px;
+    color: #1A1A1A;
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    color: #007bff;
+}
+
+.full-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.featured-projects h2 {
+    text-align: center;
+    font-family: "Fira Code", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #E0E0E0;
+}
+
+.card-container {
+    font-family: "Fira Code", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.expandable-card {
+    position: relative;
+    max-width: 250px;
+}
+
+/* Hide the checkbox */
+.card-toggle {
+  display: none;
+}
+
+/* Style the card (visible preview) */
+.card {
+  display: block;
+  width: 250px;
+  height: 250px;
+  background-color: #E0E0E0;
+  color: #1A1A1A;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content h2,
+.card-content .summary {
+  padding: 0.5rem;
+}
+
+/* Base Modal Style */
+.card-modal {
+  position: fixed;
+  inset: 0;
+  display: flex; /* Always flex for animation to work */
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Modal Content */
+.card-modal-content {
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Modal Image */
+.card-modal-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Checkbox activates modal appearance */
+.card-toggle:checked ~ .card-modal {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Animate modal content when visible */
+.card-toggle:checked ~ .card-modal .card-modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #262626;
+  padding: 20px 0;
+  text-align: center;
+  font-family: sans-serif;
+  color: #e0e0e0;
+  margin-top: 50px;
+}
+
+.footer p {
+  font-family: "Fira Code", sans-serif;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  color: #e0e0e0;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #007bff;
+}
