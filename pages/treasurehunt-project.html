@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+    <!-- NAV BAR (Matches Index) -->
+    <header>
+        <a href="../index.html" class="portfolio">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="../index.html#projects">Back to Projects</a></li>
+        </ul>
+        <a href="../index.html#contact" class="cta">Contact</a>
+    </header>
+
+    <main class="project-page">
+
+        <!-- PROJECT TITLE & SUBTITLE -->
+        <div class="project-header">
+            <h1>Project Title</h1>
+            <p class="project-subtitle">2D RPG Legacy Simulator Built in Unity & C#</p>
+        </div>
+
+        <!-- DEMO VIDEO SECTION -->
+        <section class="video-container">
+            <!-- Replace 'video-placeholder.mp4' or embed an <iframe> for YouTube -->
+            <video controls poster="poster-frame.jpg">
+                <source src="demo-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- TWO-COLUMN DETAILS SECTION -->
+        <section class="project-details">
+            
+            <!-- LEFT COLUMN: Development Info -->
+            <div class="details-card dev-info">
+                <h2>Development Info</h2>
+                
+                <div class="info-group">
+                    <span class="label">Role</span>
+                    <span class="value">Project Manager / Lead Programmer</span>
+                </div>
+
+                <div class="info-group">
+                    <span class="label">Timeline</span>
+                    <span class="value">4 Months (Feb 2026 - May 2026)</span>
+                </div>
+
+                <div class="info-group">
+                    <span class="label">Engine & Tools</span>
+                    <div class="tags-container">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="info-group">
+                    <span class="label">Platform</span>
+                    <span class="value">PC / Standalone</span>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Responsibilities -->
+            <div class="details-card responsibilities">
+                <h2>Responsibilities</h2>
+                <ul>
+                    <li>Architected core player movement and collision mechanics using Unity's 2D Rigidbody system.</li>
+                    <li>Designed and maintained the project roadmap, coordinating sprint goals across a 3-person team.</li>
+                    <li>Implemented state machines for NPC dialogue and gameplay progression logic.</li>
+                    <li>Optimized asset loading and scene transitions to ensure steady performance.</li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
