@@ -115,6 +115,96 @@
     color: #B3B3B3;
 }
 
+/* === FULL-WIDTH SECTIONS (Overview & Gallery) === */
+.full-width-section {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.full-width-section h2 {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 700;
+    color: #E0E0E0;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 12px;
+}
+
+/* Overview Card */
+.overview-card {
+    background-color: #262626;
+    border: 1px solid #333333;
+    border-radius: 16px;
+    padding: 24px 30px;
+}
+
+.overview-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #B3B3B3;
+}
+
+.overview-card strong {
+    color: #E0E0E0;
+}
+
+/* Gameplay Screenshots Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    background-color: #161616;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px);
+    border-color: #007bff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Reflective Section Tweaks */
+.reflective-section .details-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.reflective-section .details-card li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #B3B3B3;
+}
+
+.reflective-section .details-card strong {
+    color: #E0E0E0;
+}
+
+/* Responsive Grid for Gallery */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Mobile Responsive adjustment */
 @media (max-width: 768px) {
     .project-details {

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title | Portfolio</title>
+    <title>TreasureHunt | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
 
-    <!-- NAV BAR (Matches Index) -->
+    <!-- NAV BAR -->
     <header>
         <a href="/pages/index.html" class="portfolio">Mj.leguidleguid</a>
         <ul class="nav-links">
@@ -28,7 +28,6 @@
 
         <!-- DEMO VIDEO SECTION -->
         <section class="video-container">
-            <!-- Replace 'video-placeholder.mp4' or embed an <iframe> for YouTube -->
             <video controls poster="poster-frame.jpg">
                 <source src="demo-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -71,10 +70,63 @@
             <div class="details-card responsibilities">
                 <h2>Responsibilities</h2>
                 <ul>
-                    <li>Led the team development and scope management (Revise)</li>
-                    <li>Architected core augmented reality mechanics. (Revise)</li>
-                    <li>Programmed gameplay features, assets, animations, and sounds.</li>
-                    
+                    <li>Managed project roadmap and coordinated deliverable milestones across core phases.</li>
+                    <li>Architected augmented reality camera handling and target tracking logic in Unity.</li>
+                    <li>Programmed core gameplay loops, user interface flows, animations, and audio transitions.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- GAME OVERVIEW -->
+        <section class="full-width-section">
+            <h2>Game Overview</h2>
+            <div class="overview-card">
+                <p>
+                    <strong>TreasureHunt</strong> is an interactive location-based augmented reality mobile game designed to combine real-world spatial navigation with digital puzzle-solving. Players use their mobile devices to scan real-world environments, uncover hidden digital artifacts, and complete physical exploration challenges.
+                </p>
+            </div>
+        </section>
+
+        <!-- SCREENSHOTS GALLERY -->
+        <section class="full-width-section">
+            <h2>Gameplay Screenshots</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="path/to/screenshot1.jpg" alt="AR Target Tracking Interface">
+                </div>
+                <div class="gallery-item">
+                    <img src="path/to/screenshot2.jpg" alt="Inventory and Clue UI">
+                </div>
+                <div class="gallery-item">
+                    <img src="path/to/screenshot3.jpg" alt="Puzzle Solving View">
+                </div>
+                <div class="gallery-item">
+                    <img src="path/to/screenshot4.jpg" alt="Treasure Discovery Feedback">
+                </div>
+            </div>
+        </section>
+
+        <!-- TWO-COLUMN LEARNING & IMPROVEMENTS SECTION -->
+        <section class="project-details reflective-section">
+            
+            <!-- LEFT COLUMN: What I Learned -->
+            <div class="details-card learning-card">
+                <h2>What I Learned</h2>
+                <ul>
+                    <li><strong>AR Foundation Integration:</strong> Gained hands-on experience handling plane detection, surface anchoring, and lighting estimation on Android devices.</li>
+                    <li><strong>Mobile Optimization:</strong> Reduced draw calls and asset memory overhead to sustain target frame rates on mid-range hardware.</li>
+                    <li><strong>Cross-Functional Workflow:</strong> Balanced Project Management duties alongside active code implementation and visual asset design.</li>
+                </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: What I Hope to Improve -->
+            <div class="details-card improvement-card">
+                <h2>What I Hope to Improve</h2>
+                <ul>
+                    <li><strong>Occlusion & Lighting Realism:</strong> Implement depth-texture-based occlusion so virtual objects render realistically behind physical obstacles.</li>
+                    <li><strong>Multiplayer/Co-op Synchronization:</strong> Add shared AR spatial anchors to allow simultaneous multi-device interaction in the same space.</li>
+                    <li><strong>Dynamic Puzzle Generation:</strong> Shift from pre-set marker coordinates to procedurally mapped spatial targets based on surrounding terrain.</li>
                 </ul>
             </div>
 
